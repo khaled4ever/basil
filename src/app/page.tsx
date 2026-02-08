@@ -71,12 +71,14 @@ export default function Home() {
               نحن نقدم خدمات صيانة متخصصة بمعايير عالمية لكل من مرسيدس، بي إم دبليو، أودي، بورش وغيرها. دقة متناهية، مهندسون خبراء، وقطع غيار أصلية.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
-              <Button size="lg" className="bg-accent text-primary hover:bg-accent/90 text-lg font-bold px-10 py-7">
-                ابدأ الصيانة الآن
+              <Button size="lg" className="bg-accent text-primary hover:bg-accent/90 text-lg font-bold px-10 py-7" asChild>
+                <a href={`tel:${phoneNumber}`}>
+                  اتصل بنا الآن
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 text-lg font-bold px-10 py-7" asChild>
                 <a href={`tel:${phoneNumber}`}>
-                  اتصل بنا الآن
+                  حجز موعد
                 </a>
               </Button>
             </div>
@@ -173,7 +175,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
                   <span className="text-primary font-bold text-2xl italic">A</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white">AutoHaus <span className="text-accent">Pro</span></h2>
+                <h2 className="text-3xl font-bold text-white">صيانة السيارات الاوربية والالمانية</h2>
               </div>
               <p className="text-white/60 text-lg max-w-md leading-relaxed">
                 المركز الأول في المملكة المتخصص حصرياً في صيانة السيارات الألمانية والأوروبية. نجمع بين الخبرة الطويلة وأحدث التقنيات العالمية.
@@ -210,7 +212,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-white/10 pt-8 text-center text-white/40 text-sm">
-            <p>© {new Date().getFullYear()} AutoHaus Pro. جميع الحقوق محفوظة.</p>
+            <p>© {new Date().getFullYear()} صيانة السيارات الاوربية والالمانية. جميع الحقوق محفوظة.</p>
           </div>
         </div>
       </footer>
