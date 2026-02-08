@@ -23,8 +23,7 @@ const GenerateServiceImagesOutputSchema = z.object({
   imageUrl: z
     .string()
     .describe(
-      'The generated image URL as a data URI (e.g., data:image/png;base64,<encoded_data>).' + 
-      'MUST include a MIME type and use Base64 encoding. Expected format: \'data:<mimetype>;base64,<encoded_data>\'.'      
+      'The generated image URL as a data URI.'
     ),
 });
 export type GenerateServiceImagesOutput = z.infer<typeof GenerateServiceImagesOutputSchema>;
@@ -33,16 +32,6 @@ export async function generateServiceImages(input: GenerateServiceImagesInput): 
   return generateServiceImagesFlow(input);
 }
 
-const prompt = ai.definePrompt({
-  name: 'generateServiceImagePrompt',
-  input: {schema: GenerateServiceImagesInputSchema},
-  output: {schema: GenerateServiceImagesOutputSchema},
-  prompt: `Generate a professional and visually appealing image suitable for the website section on "{{serviceType}}".  The image should be relevant to the service and evoke trust and expertise. The website is for a German/European auto repair shop.
-
-It must be returned as a data URI.
-`,
-});
-
 const generateServiceImagesFlow = ai.defineFlow(
   {
     name: 'generateServiceImagesFlow',
@@ -50,10 +39,17 @@ const generateServiceImagesFlow = ai.defineFlow(
     outputSchema: GenerateServiceImagesOutputSchema,
   },
   async input => {
+    // Generate a professional image using Imagen 4
+    // We pass a direct string prompt to the model instead of an LLM response object
     const {media} = await ai.generate({
-      prompt: await prompt(input),
       model: 'googleai/imagen-4.0-fast-generate-001',
+      prompt: `Generate a professional and visually appealing photograph suitable for the website section on "${input.serviceType}". The image should be relevant to the service and evoke trust and expertise. The website is for a high-end German/European auto repair shop. The style should be realistic, clean, and modern.`,
     });
-    return {imageUrl: media.url!};
+
+    if (!media || !media.url) {
+      throw new Error('Image generation failed: No media returned from the model.');
+    }
+
+    return {imageUrl: media.url};
   }
 );
