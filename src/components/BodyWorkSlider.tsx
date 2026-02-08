@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 
 const bodyworkImages = [
@@ -20,6 +21,10 @@ const bodyworkImages = [
 ];
 
 export function BodyWorkSlider() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false })
+  );
+
   return (
     <section className="py-20 bg-primary text-white">
       <div className="container mx-auto px-4">
@@ -35,6 +40,7 @@ export function BodyWorkSlider() {
             align: "start",
             loop: true,
           }}
+          plugins={[plugin.current]}
           className="w-full"
         >
           <CarouselContent className="-ml-2 md:-ml-4">
