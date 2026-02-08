@@ -15,7 +15,7 @@
     {
       "id": "brand-mercedes",
       "description": "Mercedes Logo",
-      "imageUrl": "https://images.unsplash.com/photo-1615228939091-7db8c7f41ee1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxNZXJjZWRlcyUyMGxvZ298ZW58MHx8fHwxNzcwNTE2MDUzfDA&ixlib=rb-4.1.0&q=80&w=200",
+      "imageUrl": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
       "imageHint": "Mercedes logo"
     },
     {
@@ -39,7 +39,7 @@
     {
       "id": "brand-landrover",
       "description": "Land Rover Logo",
-      "imageUrl": "https://images.unsplash.com/photo-1604026289719-a60fd5374945?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8TGFuZCUyMFJvdmVyfGVufDB8fHx8MTc3MDU3MDY3N3ww&ixlib=rb-4.1.0&q=80&w=200",
+      "imageUrl": "https://images.unsplash.com/photo-1546518071-fddcdda7580a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
       "imageHint": "Land Rover logo"
     },
     {
