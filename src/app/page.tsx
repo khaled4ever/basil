@@ -7,6 +7,7 @@ import { ServiceSection } from '@/components/ServiceSection';
 import { BodyWorkSlider } from '@/components/BodyWorkSlider';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const SERVICES = [
   { id: 'mechanics', name: 'Mechanics', arabicName: 'الميكانيكا العامة', icon: <Wrench className="w-5 h-5" /> },
@@ -20,6 +21,7 @@ const SERVICES = [
 export default function Home() {
   const phoneNumber = "0505557816";
   const whatsappUrl = "https://wa.me/966505557816";
+  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
 
   return (
     <div className="min-h-screen bg-background">
@@ -52,14 +54,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[85vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
-            src="https://picsum.photos/seed/hero-cars/1920/1080"
-            alt="European Car Workshop"
-            fill
-            className="object-cover brightness-[0.4]"
-            priority
-            data-ai-hint="luxury garage"
-          />
+          {heroImage && (
+            <Image
+              src={heroImage.imageUrl}
+              alt={heroImage.description}
+              fill
+              className="object-cover brightness-[0.4]"
+              priority
+              data-ai-hint={heroImage.imageHint}
+            />
+          )}
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
