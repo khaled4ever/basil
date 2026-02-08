@@ -17,6 +17,8 @@ const SERVICES = [
 ];
 
 export default function Home() {
+  const phoneNumber = "0505557816";
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header/Nav */}
@@ -51,6 +53,7 @@ export default function Home() {
             fill
             className="object-cover brightness-[0.4]"
             priority
+            data-ai-hint="luxury garage"
           />
         </div>
         
@@ -70,8 +73,10 @@ export default function Home() {
               <Button size="lg" className="bg-accent text-primary hover:bg-accent/90 text-lg font-bold px-10 py-7">
                 ابدأ الصيانة الآن
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 text-lg font-bold px-10 py-7">
-                تصفح خدماتنا
+              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 text-lg font-bold px-10 py-7" asChild>
+                <a href={`tel:${phoneNumber}`}>
+                  اتصل بنا الآن
+                </a>
               </Button>
             </div>
           </div>
@@ -98,7 +103,7 @@ export default function Home() {
               <Phone className="text-accent w-6 h-6" />
               <div>
                 <p className="text-xs text-gray-400">للحجز والاستفسار</p>
-                <p className="font-bold">0505557816</p>
+                <p className="font-bold">{phoneNumber}</p>
               </div>
             </div>
           </div>
@@ -189,7 +194,7 @@ export default function Home() {
               <div className="space-y-4 text-white/70">
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-accent" />
-                  <span>0505557816</span>
+                  <span>{phoneNumber}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-accent" />
