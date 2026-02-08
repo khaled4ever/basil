@@ -15,7 +15,7 @@
     {
       "id": "brand-mercedes",
       "description": "Mercedes Logo",
-      "imageUrl": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
+      "imageUrl": "https://drive.google.com/uc?id=14i7kb7cyoMJzXITeYuX4tYEZw8D2aTaI",
       "imageHint": "Mercedes logo"
     },
     {
@@ -123,8 +123,8 @@
     {
       "id": "bodywork-12",
       "description": "سحب صدمات",
-      "imageUrl": "https://picsum.photos/seed/body12/800/600",
-      "imageHint": "dent puller"
+      "imageUrl": "https://images.unsplash.com/photo-1594097840961-411cf23dd23f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "dent repair"
     }
   ]
 }
