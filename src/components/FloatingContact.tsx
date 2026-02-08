@@ -14,7 +14,7 @@ export function FloatingContact() {
         rel="noopener noreferrer"
         className="group flex items-center gap-3 bg-green-500 text-white px-4 py-3 rounded-full shadow-2xl hover:bg-green-600 transition-all transform hover:scale-105"
       >
-        <span className="font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+        <span className="font-medium whitespace-nowrap animate-pulse">
           راسلنا واتساب
         </span>
         <MessageCircle className="w-6 h-6" />
@@ -24,7 +24,7 @@ export function FloatingContact() {
         href={callUrl}
         className="group flex items-center gap-3 bg-primary text-white px-4 py-3 rounded-full shadow-2xl hover:bg-primary/90 transition-all transform hover:scale-105"
       >
-        <span className="font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+        <span className="font-medium whitespace-nowrap animate-pulse">
           اتصل بنا
         </span>
         <Phone className="w-6 h-6" />
