@@ -32,10 +32,10 @@ export default function Home() {
           </div>
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-primary">
-            <a href="#services" className="hover:text-accent transition-colors">الخدمات</a>
-            <a href="#bodywork" className="hover:text-accent transition-colors">السمكرة</a>
-            <a href="#brands" className="hover:text-accent transition-colors">العلامات</a>
-            <a href="#contact" className="hover:text-accent transition-colors">اتصل بنا</a>
+            <a href="#bodywork" className="hover:text-accent transition-colors">السمكرة والدهان</a>
+            <a href="#electrical" className="hover:text-accent transition-colors">الكهرباء</a>
+            <a href="#mechanics" className="hover:text-accent transition-colors">الميكانيكا</a>
+            <a href="#programming" className="hover:text-accent transition-colors">البرمجة وفحص الكمبيوتر</a>
           </nav>
 
           <Button className="bg-accent text-primary hover:bg-accent/90 font-bold px-6">
