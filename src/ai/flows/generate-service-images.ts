@@ -23,7 +23,7 @@ const GenerateServiceImagesOutputSchema = z.object({
   imageUrl: z
     .string()
     .describe(
-      'The generated image URL as a data URI.'
+      'The generated image URL as a data URI or a fallback placeholder URL.'
     ),
 });
 export type GenerateServiceImagesOutput = z.infer<typeof GenerateServiceImagesOutputSchema>;
@@ -39,17 +39,25 @@ const generateServiceImagesFlow = ai.defineFlow(
     outputSchema: GenerateServiceImagesOutputSchema,
   },
   async input => {
-    // Generate a professional image using Imagen 4
-    // We pass a direct string prompt to the model instead of an LLM response object
-    const {media} = await ai.generate({
-      model: 'googleai/imagen-4.0-fast-generate-001',
-      prompt: `Generate a professional and visually appealing photograph suitable for the website section on "${input.serviceType}". The image should be relevant to the service and evoke trust and expertise. The website is for a high-end German/European auto repair shop. The style should be realistic, clean, and modern.`,
-    });
+    try {
+      // Generate a professional image using Imagen 4
+      const {media} = await ai.generate({
+        model: 'googleai/imagen-4.0-fast-generate-001',
+        prompt: `Generate a professional and visually appealing photograph suitable for the website section on "${input.serviceType}". The image should be relevant to the service and evoke trust and expertise. The website is for a high-end German/European auto repair shop. The style should be realistic, clean, and modern.`,
+      });
 
-    if (!media || !media.url) {
-      throw new Error('Image generation failed: No media returned from the model.');
+      if (media && media.url) {
+        return {imageUrl: media.url};
+      }
+    } catch (error) {
+      // Log the error for visibility but don't crash the flow
+      console.error('AI Image generation failed (likely quota limit):', error);
     }
 
-    return {imageUrl: media.url};
+    // Fallback to a high-quality placeholder if AI generation fails or hits quota limits
+    const seed = encodeURIComponent(input.serviceType.toLowerCase().replace(/\s+/g, '-'));
+    return {
+      imageUrl: `https://picsum.photos/seed/${seed}/800/800`
+    };
   }
 );
