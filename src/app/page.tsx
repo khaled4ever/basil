@@ -42,7 +42,7 @@ export default function Home() {
           </nav>
 
           <Button className="bg-accent text-primary hover:bg-accent/90 font-bold px-6" asChild>
-            <a href={`tel:${phoneNumber}`}>
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               حجز موعد
             </a>
           </Button>
@@ -81,7 +81,7 @@ export default function Home() {
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 text-lg font-bold px-10 py-7" asChild>
-                <a href={`tel:${phoneNumber}`}>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   حجز موعد
                 </a>
               </Button>
