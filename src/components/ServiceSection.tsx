@@ -53,7 +53,7 @@ export function ServiceSection({ id, name, arabicName, icon, isReversed }: Servi
               {arabicName}
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
-              خدمات {arabicName} بمستوى الوكالة
+              خدمات {arabicName} المتخصصة
             </h2>
             <div className="text-lg text-muted-foreground leading-relaxed min-h-[100px]">
               {loading ? (
