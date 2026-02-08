@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Wrench, Settings, Zap, Cpu, Paintbrush, Activity, Gauge, MapPin, Clock, Phone } from 'lucide-react';
 import { BrandSlider } from '@/components/BrandSlider';
@@ -18,6 +19,7 @@ const SERVICES = [
 
 export default function Home() {
   const phoneNumber = "0505557816";
+  const whatsappUrl = "https://wa.me/966505557816";
 
   return (
     <div className="min-h-screen bg-background">
@@ -39,8 +41,10 @@ export default function Home() {
             <a href="#maintenance" className="hover:text-accent transition-colors">الصيانة الدورية</a>
           </nav>
 
-          <Button className="bg-accent text-primary hover:bg-accent/90 font-bold px-6">
-            حجز موعد
+          <Button className="bg-accent text-primary hover:bg-accent/90 font-bold px-6" asChild>
+            <a href={`tel:${phoneNumber}`}>
+              حجز موعد
+            </a>
           </Button>
         </div>
       </header>
@@ -157,8 +161,10 @@ export default function Home() {
               <p className="text-xl font-medium opacity-80">نحن ندرك تماماً قيمة سيارتك، ونتعامل معها بكل حب واحترافية.</p>
             </div>
             <div className="flex-1 flex justify-center md:justify-end">
-              <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-xl font-black px-12 py-8 rounded-none shadow-[10px_10px_0px_0px_rgba(30,58,138,1)]">
-                احجز فحصك المجاني الآن
+              <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-xl font-black px-12 py-8 rounded-none shadow-[10px_10px_0px_0px_rgba(30,58,138,1)]" asChild>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                  احجز فحصك المجاني الآن
+                </a>
               </Button>
             </div>
           </div>
