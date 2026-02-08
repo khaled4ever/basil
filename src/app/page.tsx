@@ -28,7 +28,7 @@ export default function Home() {
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-accent font-bold text-xl italic">A</span>
             </div>
-            <h1 className="text-2xl font-bold text-primary tracking-tight">AutoHaus <span className="text-accent">Pro</span></h1>
+            <h1 className="text-2xl font-bold text-primary tracking-tight">صيانة السيارات الاوربية والالمانية</h1>
           </div>
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-primary">
