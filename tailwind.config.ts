@@ -88,10 +88,23 @@ export default {
             height: '0',
           },
         },
+        'radiant-pulse': {
+          '0%, 100%': { 
+            opacity: '1',
+            filter: 'brightness(1.8) drop-shadow(0 0 10px currentColor)',
+            transform: 'scale(1)'
+          },
+          '50%': { 
+            opacity: '0.7',
+            filter: 'brightness(1) drop-shadow(0 0 2px currentColor)',
+            transform: 'scale(0.98)'
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'radiant-pulse': 'radiant-pulse 1s ease-in-out infinite',
       },
     },
   },
