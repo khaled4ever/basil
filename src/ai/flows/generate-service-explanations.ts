@@ -30,10 +30,11 @@ const prompt = ai.definePrompt({
   input: {schema: GenerateServiceExplanationsInputSchema},
   output: {schema: GenerateServiceExplanationsOutputSchema},
   prompt: `You are an expert in automotive services, skilled at explaining complex topics in a clear and engaging way.
-  Generate a concise and informative explanation for the following service, suitable for a website:
+  Generate a concise and informative explanation for the following service, suitable for a website.
+  The explanation must be in Arabic as the target audience is in Saudi Arabia.
   
   Service Name: {{{serviceName}}}
-  Explanation:`, // Removed example text and focused on the core instruction
+  Explanation:`,
 });
 
 const generateServiceExplanationsFlow = ai.defineFlow(
@@ -43,7 +44,19 @@ const generateServiceExplanationsFlow = ai.defineFlow(
     outputSchema: GenerateServiceExplanationsOutputSchema,
   },
   async input => {
-    const {output} = await prompt(input);
-    return output!;
+    try {
+      const {output} = await prompt(input);
+      if (output) {
+        return output;
+      }
+    } catch (error) {
+      // Log the error for visibility but don't crash the flow
+      console.error('AI Explanation generation failed (likely quota limit):', error);
+    }
+
+    // Fallback to a professional generic explanation in Arabic if AI generation fails
+    return {
+      explanation: `نحن نقدم خدمات متخصصة في ${input.serviceName} بأعلى معايير الجودة والاحترافية. فريقنا من المهندسين الخبراء يستخدمون أحدث التقنيات لضمان أداء سيارتك الأوروبية بكفاءة عالية، مع الالتزام التام بقطع الغيار الأصلية ودقة التنفيذ.`
+    };
   }
 );
