@@ -18,7 +18,13 @@ const SERVICES = [
   },
   { id: 'engine', name: 'Engine Repair Overhaul', arabicName: 'توضيب المحركات', icon: <Gauge className="w-5 h-5" /> },
   { id: 'gearbox', name: 'Gearbox Overhaul', arabicName: 'توضيب الجيربوكس', icon: <Settings className="w-5 h-5" /> },
-  { id: 'electrical', name: 'Electrical Repairs', arabicName: 'الأعطال الكهربائية', icon: <Zap className="w-5 h-5" /> },
+  { 
+    id: 'electrical', 
+    name: 'Electrical Repairs', 
+    arabicName: 'الأعطال الكهربائية', 
+    icon: <Zap className="w-5 h-5" />,
+    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/4.png'
+  },
   { id: 'programming', name: 'Car Computer Programming', arabicName: 'برمجة كمبيوتر السيارة', icon: <Cpu className="w-5 h-5" /> },
   { id: 'maintenance', name: 'Routine Maintenance', arabicName: 'الصيانة الدورية', icon: <Activity className="w-5 h-5" /> },
 ];
