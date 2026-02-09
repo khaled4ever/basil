@@ -2,63 +2,37 @@
 "use client";
 
 import React from 'react';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import AutoScroll from 'embla-carousel-auto-scroll';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function BrandSlider() {
-  const plugin = React.useRef(
-    AutoScroll({ 
-      speed: 1, 
-      stopOnInteraction: false, 
-      stopOnMouseEnter: false,
-      playOnInit: true
-    })
-  );
-
   // سحب جميع الصور التي تبدأ بـ "brand-" من ملف الإعدادات
   const brandImages = PlaceHolderImages.filter(img => img.id.startsWith('brand-'));
 
-  // نكرر العناصر لضمان وجود عدد كافٍ لجعل الحركة مستمرة وبدون فراغات
-  const duplicatedBrands = [...brandImages, ...brandImages, ...brandImages, ...brandImages];
-
   return (
-    <div className="w-full bg-white py-12 border-y shadow-sm overflow-hidden">
+    <div className="w-full bg-white py-12 border-y shadow-sm">
       <div className="container mx-auto px-4">
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-            dragFree: true,
-          }}
-          plugins={[plugin.current]}
-          className="w-full"
-        >
-          <CarouselContent className="-ml-2 md:-ml-4">
-            {duplicatedBrands.map((brand, index) => (
-              <CarouselItem key={`${brand.id}-${index}`} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
-                <div className="flex flex-col items-center justify-center p-2 group cursor-pointer">
-                  <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-muted bg-white p-0 shadow-md transition-all duration-500 group-hover:border-accent group-hover:scale-105 overflow-hidden flex items-center justify-center">
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={brand.imageUrl}
-                        alt={brand.description}
-                        fill
-                        unoptimized
-                        className="object-cover"
-                        data-ai-hint={brand.imageHint}
-                      />
-                    </div>
-                  </div>
-                  <span className="mt-4 text-[10px] md:text-xs font-bold text-muted-foreground uppercase tracking-widest group-hover:text-primary transition-colors text-center">
-                    {brand.description}
-                  </span>
+        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 lg:gap-14">
+          {brandImages.map((brand) => (
+            <div key={brand.id} className="flex flex-col items-center group animate-in fade-in duration-500">
+              <div className="relative w-20 h-20 md:w-28 md:h-28 rounded-full border-2 border-muted bg-white p-3 shadow-sm transition-all duration-300 group-hover:border-accent group-hover:shadow-md group-hover:scale-105 overflow-hidden flex items-center justify-center">
+                <div className="relative w-full h-full">
+                  <Image
+                    src={brand.imageUrl}
+                    alt={brand.description}
+                    fill
+                    unoptimized
+                    className="object-contain"
+                    data-ai-hint={brand.imageHint}
+                  />
                 </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
+              </div>
+              <span className="mt-3 text-[10px] md:text-xs font-bold text-muted-foreground uppercase tracking-widest text-center group-hover:text-primary transition-colors">
+                {brand.description}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
