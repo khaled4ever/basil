@@ -60,14 +60,16 @@ export default function Home() {
             <div className="w-10 h-10 bg-primary text-accent rounded-lg flex items-center justify-center">
               <Truck className="w-6 h-6" />
             </div>
-            <h1 className="text-2xl font-bold text-primary tracking-tight">ورشة متنقلة للسيارات الألمانية والصينية</h1>
+            <h1 className="text-2xl font-bold text-primary tracking-tight">ورشة متنقلة للسيارات</h1>
           </div>
           
-          <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-primary">
-            <a href="#electrical" className="hover:text-accent transition-colors">الكهرباء</a>
+          <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-primary">
             <a href="#mechanics" className="hover:text-accent transition-colors">الميكانيكا</a>
+            <a href="#battery" className="hover:text-accent transition-colors">البطاريات</a>
+            <a href="#electrical" className="hover:text-accent transition-colors">الكهرباء</a>
             <a href="#programming" className="hover:text-accent transition-colors">البرمجة</a>
-            <a href="#maintenance" className="hover:text-accent transition-colors">الصيانة الدورية</a>
+            <a href="#maintenance" className="hover:text-accent transition-colors">الصيانة</a>
+            <a href="#bodywork" className="hover:text-accent transition-colors">السمكرة</a>
           </nav>
 
           <Button className="bg-accent text-primary hover:bg-accent/90 font-bold px-6" asChild>
@@ -205,7 +207,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-accent text-primary rounded-lg flex items-center justify-center">
                   <Truck className="w-8 h-8" />
                 </div>
-                <h2 className="text-3xl font-bold text-white">ورشة متنقلة للسيارات الألمانية والصينية</h2>
+                <h2 className="text-3xl font-bold text-white">ورشة متنقلة للسيارات</h2>
               </div>
               <p className="text-white/60 text-lg max-w-md leading-relaxed">
                 الورشة المتنقلة الأولى في الرياض المتخصصة في السيارات الألمانية والصينية. نجمع بين الخبرة وأحدث التقنيات المتنقلة لخدمتك في أي مكان.
@@ -213,11 +215,14 @@ export default function Home() {
             </div>
             
             <div className="space-y-4">
-              <h3 className="text-xl font-bold border-b-2 border-accent inline-block mb-4">روابط سريعة</h3>
+              <h3 className="text-xl font-bold border-b-2 border-accent inline-block mb-4">خدماتنا</h3>
               <ul className="space-y-3 text-white/70">
-                <li><a href="#" className="hover:text-accent">الرئيسية</a></li>
-                <li><a href="#services" className="hover:text-accent">خدماتنا</a></li>
-                <li><a href="#contact" className="hover:text-accent">تواصل معنا</a></li>
+                <li><a href="#mechanics" className="hover:text-accent">الميكانيكا العامة</a></li>
+                <li><a href="#battery" className="hover:text-accent">تغيير بطارية السيارة</a></li>
+                <li><a href="#electrical" className="hover:text-accent">الأعطال الكهربائية</a></li>
+                <li><a href="#programming" className="hover:text-accent">برمجة كمبيوتر السيارة</a></li>
+                <li><a href="#maintenance" className="hover:text-accent">الصيانة الدورية</a></li>
+                <li><a href="#bodywork" className="hover:text-accent">السمكرة والدهان</a></li>
               </ul>
             </div>
 
