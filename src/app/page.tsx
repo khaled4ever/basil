@@ -119,7 +119,7 @@ export default function Home() {
                   اتصل بنا الآن
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 text-lg font-bold px-10 py-7" asChild>
+              <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white text-lg font-bold px-10 py-7" asChild>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   حجز موعد
                 </a>
