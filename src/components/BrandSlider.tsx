@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import Autoplay from 'embla-carousel-autoplay';
+import AutoScroll from 'embla-carousel-auto-scroll';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -20,7 +20,12 @@ const brands = [
 
 export function BrandSlider() {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false })
+    AutoScroll({ 
+      speed: 1, 
+      stopOnInteraction: false, 
+      stopOnMouseEnter: true,
+      playOnInit: true
+    })
   );
 
   return (
@@ -30,6 +35,7 @@ export function BrandSlider() {
           opts={{
             align: "start",
             loop: true,
+            dragFree: true,
           }}
           plugins={[plugin.current]}
           className="w-full"
@@ -40,7 +46,7 @@ export function BrandSlider() {
               if (!brandImage) return null;
 
               return (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
+                <CarouselItem key={`${brand.id}-${index}`} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6">
                   <div className="flex flex-col items-center justify-center p-2 group cursor-pointer">
                     <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-muted bg-white p-0 shadow-md transition-all duration-500 group-hover:border-accent group-hover:scale-105 overflow-hidden flex items-center justify-center">
                       <div className="relative w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:rotate-6">
