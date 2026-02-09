@@ -23,7 +23,13 @@ const SERVICES = [
     icon: <Gauge className="w-5 h-5" />,
     imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/6.png'
   },
-  { id: 'gearbox', name: 'Gearbox Overhaul', arabicName: 'توضيب الجيربوكس', icon: <Settings className="w-5 h-5" /> },
+  { 
+    id: 'gearbox', 
+    name: 'Gearbox Overhaul', 
+    arabicName: 'توضيب الجيربوكس', 
+    icon: <Settings className="w-5 h-5" />,
+    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/jear.png'
+  },
   { 
     id: 'electrical', 
     name: 'Electrical Repairs', 
