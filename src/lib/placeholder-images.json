@@ -3,79 +3,79 @@
     {
       "id": "hero-bg",
       "description": "Luxury European Car Workshop",
-      "imageUrl": "https://images.unsplash.com/photo-1663832871970-ce04419ea2ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxldXJvcGVhbiUyMGx1eHVyeSUyMGNhciUyMGdhcmFnZXxlbnwwfHx8fDE3NzA1NzA2Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1663832871970-ce04419ea2ee?auto=format&fit=crop&q=80&w=1920",
       "imageHint": "luxury garage"
     },
     {
       "id": "brand-bmw",
       "description": "BMW",
-      "imageUrl": "https://images.unsplash.com/photo-1557053964-937650b63311?auto=format&fit=crop&q=80&w=300",
+      "imageUrl": "https://images.unsplash.com/photo-1557053964-937650b63311?auto=format&fit=crop&q=80&w=400",
       "imageHint": "BMW logo"
     },
     {
       "id": "brand-mercedes",
       "description": "Mercedes-Benz",
-      "imageUrl": "https://drive.google.com/uc?export=download&id=14i7kb7cyoMJzXITeYuX4tYEZw8D2aTaI",
+      "imageUrl": "https://drive.google.com/uc?id=14i7kb7cyoMJzXITeYuX4tYEZw8D2aTaI",
       "imageHint": "Mercedes logo"
     },
     {
       "id": "brand-audi",
       "description": "Audi",
-      "imageUrl": "https://drive.google.com/uc?export=download&id=1rdeS89QiElJVxAPGboeRGlwak7bcgkiS",
+      "imageUrl": "https://drive.google.com/uc?id=1rdeS89QiElJVxAPGboeRGlwak7bcgkiS",
       "imageHint": "Audi logo"
     },
     {
       "id": "brand-porsche",
       "description": "Porsche",
-      "imageUrl": "https://drive.google.com/uc?export=download&id=1A6f2vNPuOVJTYipsf6Yc6AJLAkJHWqGK",
+      "imageUrl": "https://drive.google.com/uc?id=1A6f2vNPuOVJTYipsf6Yc6AJLAkJHWqGK",
       "imageHint": "Porsche logo"
     },
     {
       "id": "brand-vw",
       "description": "Volkswagen",
-      "imageUrl": "https://drive.google.com/uc?export=download&id=1b5f0wf3JJ9-oScl5t4o4Vp9F2qmltckl",
+      "imageUrl": "https://drive.google.com/uc?id=1b5f0wf3JJ9-oScl5t4o4Vp9F2qmltckl",
       "imageHint": "Volkswagen logo"
     },
     {
       "id": "brand-landrover",
       "description": "Land Rover",
-      "imageUrl": "https://drive.google.com/uc?export=download&id=1JJMopMVam9bQOF0w6SwQu-VuapcCxf5f",
+      "imageUrl": "https://drive.google.com/uc?id=1JJMopMVam9bQOF0w6SwQu-VuapcCxf5f",
       "imageHint": "Land Rover logo"
     },
     {
       "id": "brand-jaguar",
       "description": "Jaguar",
-      "imageUrl": "https://images.unsplash.com/photo-1565043581451-135778b925f4?auto=format&fit=crop&q=80&w=300",
+      "imageUrl": "https://images.unsplash.com/photo-1565043581451-135778b925f4?auto=format&fit=crop&q=80&w=400",
       "imageHint": "Jaguar logo"
     },
     {
       "id": "brand-volvo",
       "description": "Volvo",
-      "imageUrl": "https://images.unsplash.com/photo-1637760561008-c7423e2237f3?auto=format&fit=crop&q=80&w=300",
+      "imageUrl": "https://images.unsplash.com/photo-1637760561008-c7423e2237f3?auto=format&fit=crop&q=80&w=400",
       "imageHint": "Volvo logo"
     },
     {
       "id": "bodywork-1",
       "description": "ترميم الصدمات",
-      "imageUrl": "https://images.unsplash.com/photo-1560024253-570f054dea63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjYXIlMjByZXN0b3JhdGlvbnxlbnwwfHx8fDE3NzA1ODk4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1560024253-570f054dea63?auto=format&fit=crop&q=80&w=800",
       "imageHint": "car restoration"
     },
     {
       "id": "bodywork-2",
       "description": "الدهان الحراري",
-      "imageUrl": "https://images.unsplash.com/photo-1594097840961-411cf23dd23f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBwYWludGluZ3xlbnwwfHx8fDE3NzA1ODk4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1594097840961-411cf23dd23f?auto=format&fit=crop&q=80&w=800",
       "imageHint": "car painting"
     },
     {
       "id": "bodywork-3",
       "description": "تلميع ساطع",
-      "imageUrl": "https://images.unsplash.com/photo-1633014332834-c94559ff5439?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2FyJTIwZGV0YWlsaW5nfGVufDB8fHx8MTc3MDU4OTg1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1633014332834-c94559ff5439?auto=format&fit=crop&q=80&w=800",
       "imageHint": "car detailing"
     },
     {
       "id": "bodywork-4",
       "description": "إصلاح دقيق",
-      "imageUrl": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjYXIlMjByZXBhaXJ8ZW58MHx8fHwxNzcwNTgyODU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=800",
       "imageHint": "car repair"
     }
   ]
