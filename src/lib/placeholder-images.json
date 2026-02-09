@@ -77,54 +77,6 @@
       "description": "إصلاح دقيق",
       "imageUrl": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjYXIlMjByZXBhaXJ8ZW58MHx8fHwxNzcwNTgyODU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "car repair"
-    },
-    {
-      "id": "bodywork-5",
-      "description": "سمكرة بارد",
-      "imageUrl": "https://images.unsplash.com/photo-1688861940065-d48467413b8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjYXIlMjBib2R5d29ya3xlbnwwfHx8fDE3NzA1ODk4NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "car bodywork"
-    },
-    {
-      "id": "bodywork-6",
-      "description": "رش مطفي",
-      "imageUrl": "https://images.unsplash.com/photo-1761312833803-b262371a07cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXR0ZSUyMHBhaW50fGVufDB8fHx8MTc3MDU4OTg1NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "matte paint"
-    },
-    {
-      "id": "bodywork-7",
-      "description": "معالجة الخدوش",
-      "imageUrl": "https://images.unsplash.com/photo-1725199984598-20faa3755843?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzY3JhdGNoJTIwcmVwYWlyfGVufDB8fHx8MTc3MDU4OTg1NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "scratch repair"
-    },
-    {
-      "id": "bodywork-8",
-      "description": "شد شاسيه",
-      "imageUrl": "https://images.unsplash.com/photo-1666508330099-0c7c6ab0e332?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2hhc3NpcyUyMHJlcGFpcnxlbnwwfHx8fDE3NzA1ODk4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "chassis repair"
-    },
-    {
-      "id": "bodywork-9",
-      "description": "تغيير لون كامل",
-      "imageUrl": "https://images.unsplash.com/photo-1698443357916-b2a72ceddd9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29sb3IlMjBjaGFuZ2V8ZW58MHx8fHwxNzcwNTg5ODU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "color change"
-    },
-    {
-      "id": "bodywork-10",
-      "description": "حماية واجهة",
-      "imageUrl": "https://images.unsplash.com/photo-1731984955166-12db62bd51e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHBmJTIwcHJvdGVjdGlvbnxlbnwwfHx8fDE3NzA1ODk4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ppf protection"
-    },
-    {
-      "id": "bodywork-11",
-      "description": "إصلاح فايبر",
-      "imageUrl": "https://images.unsplash.com/photo-1568867666870-fcb7a26d7641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmaWJlciUyMHJlcGFpcnxlbnwwfHx8fDE3NzA1ODk4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fiber repair"
-    },
-    {
-      "id": "bodywork-12",
-      "description": "سحب صدمات",
-      "imageUrl": "https://images.unsplash.com/photo-1594097840961-411cf23dd23f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      "imageHint": "dent repair"
     }
   ]
 }
