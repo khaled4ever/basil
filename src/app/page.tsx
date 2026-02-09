@@ -21,7 +21,7 @@ const SERVICES = [
     name: 'Mobile Battery Replacement', 
     arabicName: 'تغيير بطارية السيارة', 
     icon: <BatteryCharging className="w-5 h-5" />,
-    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/ChatGPT-Image-9-%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1-2026%D8%8C-%04_57_45-%D9%85.png'
+    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/ChatGPT-Image-9-فبراير-2026،-04_57_45-م.png'
   },
   { 
     id: 'electrical', 
