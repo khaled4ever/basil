@@ -6,7 +6,6 @@ import { BrandSlider } from '@/components/BrandSlider';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { BodyWorkSlider } from '@/components/BodyWorkSlider';
 
 const SERVICES = [
   { 
@@ -173,8 +172,6 @@ export default function Home() {
           />
         ))}
       </section>
-
-      <BodyWorkSlider />
 
       {/* CTA Section */}
       <section className="py-20 bg-accent overflow-hidden relative">
