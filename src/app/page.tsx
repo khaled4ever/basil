@@ -1,11 +1,12 @@
 import React from 'react';
-import { Wrench, BatteryCharging, Target, Zap, Cpu, Activity, MapPin, Clock, Phone } from 'lucide-react';
+import { Wrench, BatteryCharging, Zap, Cpu, Activity, MapPin, Clock, Phone } from 'lucide-react';
 import { FloatingContact } from '@/components/FloatingContact';
 import { ServiceSection } from '@/components/ServiceSection';
 import { BrandSlider } from '@/components/BrandSlider';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { BodyWorkSlider } from '@/components/BodyWorkSlider';
 
 const SERVICES = [
   { 
@@ -21,13 +22,6 @@ const SERVICES = [
     arabicName: 'تغيير بطارية السيارة', 
     icon: <BatteryCharging className="w-5 h-5" />,
     imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/ChatGPT-Image-9-%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1-2026%D8%8C-04_57_45-%D9%85.png'
-  },
-  { 
-    id: 'tires', 
-    name: 'Mobile Tire Service', 
-    arabicName: 'خدمة الإطارات المتنقلة', 
-    icon: <Target className="w-5 h-5" />,
-    imageUrlOverride: 'https://images.unsplash.com/photo-1620767236372-85e3532f5f14?auto=format&fit=crop&q=80&w=800'
   },
   { 
     id: 'electrical', 
@@ -179,6 +173,8 @@ export default function Home() {
           />
         ))}
       </section>
+
+      <BodyWorkSlider />
 
       {/* CTA Section */}
       <section className="py-20 bg-accent overflow-hidden relative">
