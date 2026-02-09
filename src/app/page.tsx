@@ -4,6 +4,7 @@ import { Wrench, Settings, Zap, Cpu, Paintbrush, Activity, Gauge, MapPin, Clock,
 import { FloatingContact } from '@/components/FloatingContact';
 import { ServiceSection } from '@/components/ServiceSection';
 import { BodyWorkSlider } from '@/components/BodyWorkSlider';
+import { BrandSlider } from '@/components/BrandSlider';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -119,6 +120,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Brand Showcase Section */}
+      <BrandSlider />
 
       {/* Main Services (AI Powered) */}
       <section id="services" className="bg-background">
