@@ -6,6 +6,7 @@ import { BrandSlider } from '@/components/BrandSlider';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { BodyWorkSlider } from '@/components/BodyWorkSlider';
 
 const SERVICES = [
   { 
@@ -192,6 +193,8 @@ export default function Home() {
         </div>
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-white/20 rounded-full blur-3xl" />
       </section>
+
+      <BodyWorkSlider />
 
       {/* Footer */}
       <footer id="contact" className="bg-primary pt-20 pb-10 text-white">

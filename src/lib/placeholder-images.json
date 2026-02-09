@@ -59,6 +59,30 @@
       "description": "Haval",
       "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/haval-seeklogo.svg",
       "imageHint": "Haval logo"
+    },
+    {
+      "id": "bodywork-1",
+      "description": "إصلاح الصدمات",
+      "imageUrl": "https://images.unsplash.com/photo-1550418578-f1636d0479e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXIlMjBkZW50fGVufDB8fHx8MTc3MDY1NDI3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car dent"
+    },
+    {
+      "id": "bodywork-2",
+      "description": "دهان احترافي",
+      "imageUrl": "https://images.unsplash.com/photo-1485291783200-3e6868304e3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjYXIlMjBwYWludGluZ3xlbnwwfHx8fDE3NzA1ODk4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car painting"
+    },
+    {
+      "id": "bodywork-3",
+      "description": "ترميم الهيكل",
+      "imageUrl": "https://images.unsplash.com/photo-1512174004063-a267facbc998?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdXRvJTIwYm9keXxlbnwwfHx8fDE3NzA2NTQyNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "auto body"
+    },
+    {
+      "id": "bodywork-4",
+      "description": "تلميع وحماية",
+      "imageUrl": "https://images.unsplash.com/photo-1708805282695-ef186db20192?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBwb2xpc2hpbmd8ZW58MHx8fHwxNzcwNjU0Mjc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "car polishing"
     }
   ]
 }
