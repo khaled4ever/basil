@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrench, BatteryCharging, Zap, Cpu, Activity, MapPin, Clock, Phone } from 'lucide-react';
+import { Truck, Wrench, BatteryCharging, Zap, Cpu, Activity, MapPin, Clock, Phone } from 'lucide-react';
 import { FloatingContact } from '@/components/FloatingContact';
 import { ServiceSection } from '@/components/ServiceSection';
 import { BrandSlider } from '@/components/BrandSlider';
@@ -21,7 +21,7 @@ const SERVICES = [
     name: 'Mobile Battery Replacement', 
     arabicName: 'تغيير بطارية السيارة', 
     icon: <BatteryCharging className="w-5 h-5" />,
-    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/ChatGPT-Image-9-%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1-2026%D8%8C-04_57_45-%D9%85.png'
+    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/ChatGPT-Image-9-%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1-2026%D8%8C-%04_57_45-%D9%85.png'
   },
   { 
     id: 'electrical', 
@@ -57,8 +57,8 @@ export default function Home() {
       <header className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-accent font-bold text-xl italic">A</span>
+            <div className="w-10 h-10 bg-primary text-accent rounded-lg flex items-center justify-center">
+              <Truck className="w-6 h-6" />
             </div>
             <h1 className="text-2xl font-bold text-primary tracking-tight">ورشة متنقلة للسيارات الألمانية والصينية</h1>
           </div>
@@ -183,7 +183,7 @@ export default function Home() {
               <p className="text-xl font-medium opacity-80">راحتك تهمنا، دع فريقنا المحترف يصل إليك ويخدم سيارتك في مكانها.</p>
             </div>
             <div className="flex-1 flex justify-center md:justify-end">
-              <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-xl font-black px-12 py-8 rounded-none shadow-[10px_10px_0px_0px_rgba(30,58,138,1)]" asChild>
+              <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-xl font-black px-12 py-8 rounded-none shadow-[10px_10px_0px_0px_rgba(0, 48, 114, 1)]" asChild>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   اطلب الخدمة الآن
                 </a>
@@ -202,8 +202,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div className="col-span-1 md:col-span-2 space-y-6">
               <div className="flex items-center gap-2">
-                <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
-                  <span className="text-primary font-bold text-2xl italic">A</span>
+                <div className="w-12 h-12 bg-accent text-primary rounded-lg flex items-center justify-center">
+                  <Truck className="w-8 h-8" />
                 </div>
                 <h2 className="text-3xl font-bold text-white">ورشة متنقلة للسيارات الألمانية والصينية</h2>
               </div>
