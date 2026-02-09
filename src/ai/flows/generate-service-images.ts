@@ -43,7 +43,7 @@ const generateServiceImagesFlow = ai.defineFlow(
       // Generate a professional image using Imagen 4
       const {media} = await ai.generate({
         model: 'googleai/imagen-4.0-fast-generate-001',
-        prompt: `Generate a professional and visually appealing photograph suitable for the website section on "${input.serviceType}". The image should be relevant to the service and evoke trust and expertise. The website is for a high-end German/European auto repair shop. The style should be realistic, clean, and modern.`,
+        prompt: `Generate a professional photograph for a mobile auto repair service specializing in German and Chinese cars, for a website section on "${input.serviceType}". The image should show a mechanic working on a modern German or Chinese car in a clean outdoor or garage setting (e.g., customer's driveway). It must convey expertise, mobility, and trust. The style should be realistic, clean, and modern.`,
       });
 
       if (media && media.url) {

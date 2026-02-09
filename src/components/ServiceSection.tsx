@@ -63,7 +63,7 @@ export function ServiceSection({ id, name, arabicName, icon, isReversed, imageUr
               {arabicName}
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
-              خدمات {arabicName} المتخصصة
+              خدمة {arabicName} المتنقلة
             </h2>
             <div className="text-lg text-muted-foreground leading-relaxed min-h-[100px]">
               {loading ? (
@@ -78,8 +78,8 @@ export function ServiceSection({ id, name, arabicName, icon, isReversed, imageUr
             </div>
             <div className="flex flex-wrap gap-4 pt-4">
               <Badge variant="secondary" className="px-4 py-2 text-sm">قطع غيار أصلية</Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm">ضمان على العمل</Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm">فحص كمبيوتر مجاني</Badge>
+              <Badge variant="secondary" className="px-4 py-2 text-sm">ضمان على الخدمة</Badge>
+              <Badge variant="secondary" className="px-4 py-2 text-sm">فحص كمبيوتر متنقل</Badge>
             </div>
           </div>
 
@@ -101,7 +101,7 @@ export function ServiceSection({ id, name, arabicName, icon, isReversed, imageUr
                 <Skeleton className="w-full h-full" />
               )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
-                <span className="text-white font-bold text-xl">{arabicName} الاحترافية</span>
+                <span className="text-white font-bold text-xl">{arabicName} في موقعك</span>
               </div>
             </div>
           </div>

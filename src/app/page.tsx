@@ -1,8 +1,7 @@
 import React from 'react';
-import { Wrench, Settings, Zap, Cpu, Paintbrush, Activity, Gauge, MapPin, Clock, Phone } from 'lucide-react';
+import { Wrench, BatteryCharging, Target, Zap, Cpu, Activity, MapPin, Clock, Phone } from 'lucide-react';
 import { FloatingContact } from '@/components/FloatingContact';
 import { ServiceSection } from '@/components/ServiceSection';
-import { BodyWorkSlider } from '@/components/BodyWorkSlider';
 import { BrandSlider } from '@/components/BrandSlider';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
@@ -11,42 +10,42 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const SERVICES = [
   { 
     id: 'mechanics', 
-    name: 'Mechanics', 
+    name: 'Mobile Mechanics', 
     arabicName: 'الميكانيكا العامة', 
     icon: <Wrench className="w-5 h-5" />,
     imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/7.png'
   },
   { 
-    id: 'engine', 
-    name: 'Engine Repair Overhaul', 
-    arabicName: 'توضيب المحركات', 
-    icon: <Gauge className="w-5 h-5" />,
-    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/6.png'
+    id: 'battery', 
+    name: 'Mobile Battery Replacement', 
+    arabicName: 'تغيير بطارية السيارة', 
+    icon: <BatteryCharging className="w-5 h-5" />,
+    imageUrlOverride: 'https://images.unsplash.com/photo-1582265223528-3b50a352935c?auto=format&fit=crop&q=80&w=800'
   },
   { 
-    id: 'gearbox', 
-    name: 'Gearbox Overhaul', 
-    arabicName: 'توضيب الجيربوكس', 
-    icon: <Settings className="w-5 h-5" />,
-    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/jear.png'
+    id: 'tires', 
+    name: 'Mobile Tire Service', 
+    arabicName: 'خدمة الإطارات المتنقلة', 
+    icon: <Target className="w-5 h-5" />,
+    imageUrlOverride: 'https://images.unsplash.com/photo-1620767236372-85e3532f5f14?auto=format&fit=crop&q=80&w=800'
   },
   { 
     id: 'electrical', 
-    name: 'Electrical Repairs', 
+    name: 'Mobile Electrical Repairs', 
     arabicName: 'الأعطال الكهربائية', 
     icon: <Zap className="w-5 h-5" />,
     imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/4.png'
   },
   { 
     id: 'programming', 
-    name: 'Car Computer Programming', 
+    name: 'Mobile Car Computer Programming', 
     arabicName: 'برمجة كمبيوتر السيارة', 
     icon: <Cpu className="w-5 h-5" />,
     imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/2.png'
   },
   { 
     id: 'maintenance', 
-    name: 'Routine Maintenance', 
+    name: 'Mobile Routine Maintenance', 
     arabicName: 'الصيانة الدورية', 
     icon: <Activity className="w-5 h-5" />,
     imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/1.png'
@@ -67,14 +66,13 @@ export default function Home() {
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-accent font-bold text-xl italic">A</span>
             </div>
-            <h1 className="text-2xl font-bold text-primary tracking-tight">صيانة السيارات الاوربية والالمانية</h1>
+            <h1 className="text-2xl font-bold text-primary tracking-tight">ورشة متنقلة للسيارات الألمانية والصينية</h1>
           </div>
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-primary">
-            <a href="#bodywork" className="hover:text-accent transition-colors">السمكرة والدهان</a>
             <a href="#electrical" className="hover:text-accent transition-colors">الكهرباء</a>
             <a href="#mechanics" className="hover:text-accent transition-colors">الميكانيكا</a>
-            <a href="#programming" className="hover:text-accent transition-colors">البرمجة وفحص الكمبيوتر</a>
+            <a href="#programming" className="hover:text-accent transition-colors">البرمجة</a>
             <a href="#maintenance" className="hover:text-accent transition-colors">الصيانة الدورية</a>
           </nav>
 
@@ -104,14 +102,14 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl space-y-6">
             <div className="inline-block bg-accent text-primary font-bold px-4 py-1 rounded-sm text-sm uppercase tracking-widest mb-2 animate-bounce">
-              خبير السيارات الألمانية
+              خبير السيارات الألمانية والصينية
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-              العناية الفائقة بسيارتك <br />
-              <span className="text-accent">الأوروبية والألمانية</span>
+              خدمة صيانة متنقلة تصلك <br />
+              <span className="text-accent">أينما كنت</span>
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
-              نحن نقدم خدمات صيانة متخصصة بمعايير عالمية لكل من مرسيدس، بي إم دبليو، أودي، بورش وغيرها. دقة متناهية، مهندسون خبراء، وقطع غيار أصلية.
+              نقدم خدمة صيانة متنقلة ومحترفة في الرياض لجميع أنواع السيارات الألمانية والصينية. فريقنا مجهز بأحدث المعدات لتقديم خدمات الميكانيكا، الكهرباء، فحص الكمبيوتر، والصيانة الدورية في موقعك.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <Button size="lg" className="bg-accent text-primary hover:bg-accent/90 text-lg font-bold px-10 py-7" asChild>
@@ -135,14 +133,14 @@ export default function Home() {
               <MapPin className="text-accent w-6 h-6" />
               <div>
                 <p className="text-xs text-gray-400">موقعنا</p>
-                <p className="font-bold">الرياض، المنطقة الصناعية</p>
+                <p className="font-bold">خدمة متنقلة في كل أنحاء الرياض</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <Clock className="text-accent w-6 h-6" />
               <div>
                 <p className="text-xs text-gray-400">ساعات العمل</p>
-                <p className="font-bold">8:00 صباحاً - 9:00 مساءً</p>
+                <p className="font-bold">24/7 خدمة طوارئ</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -160,9 +158,9 @@ export default function Home() {
       <section id="services" className="bg-background">
         <div className="container mx-auto px-4 pt-20">
           <div className="text-center space-y-4 max-w-2xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold text-primary">خدماتنا المتخصصة</h2>
+            <h2 className="text-4xl font-bold text-primary">خدماتنا المتنقلة</h2>
             <div className="h-1.5 w-24 bg-accent mx-auto rounded-full" />
-            <p className="text-muted-foreground">نقدم مجموعة متكاملة من الخدمات الميكانيكية والكهربائية المصممة خصيصاً للسيارات الأوروبية الحديثة.</p>
+            <p className="text-muted-foreground">نقدم مجموعة متكاملة من الخدمات المتنقلة المصممة خصيصاً للسيارات الألمانية والصينية.</p>
           </div>
         </div>
 
@@ -182,23 +180,18 @@ export default function Home() {
         ))}
       </section>
 
-      {/* Bodywork Grid Section */}
-      <section id="bodywork">
-        <BodyWorkSlider />
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-accent overflow-hidden relative">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="flex-1 text-primary space-y-4">
-              <h2 className="text-4xl font-black italic uppercase leading-none">لا تترك سيارتك لأي أحد</h2>
-              <p className="text-xl font-medium opacity-80">نحن ندرك تماماً قيمة سيارتك، ونتعامل معها بكل حب واحترافية.</p>
+              <h2 className="text-4xl font-black italic uppercase leading-none">لا تترك سيارتك تتعطل</h2>
+              <p className="text-xl font-medium opacity-80">راحتك تهمنا، دع فريقنا المحترف يصل إليك ويخدم سيارتك في مكانها.</p>
             </div>
             <div className="flex-1 flex justify-center md:justify-end">
               <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-xl font-black px-12 py-8 rounded-none shadow-[10px_10px_0px_0px_rgba(30,58,138,1)]" asChild>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  احجز فحصك المجاني الآن
+                  اطلب الخدمة الآن
                 </a>
               </Button>
             </div>
@@ -216,10 +209,10 @@ export default function Home() {
                 <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center">
                   <span className="text-primary font-bold text-2xl italic">A</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white">صيانة السيارات الاوربية والالمانية</h2>
+                <h2 className="text-3xl font-bold text-white">ورشة متنقلة للسيارات الألمانية والصينية</h2>
               </div>
               <p className="text-white/60 text-lg max-w-md leading-relaxed">
-                المركز الأول في المملكة المتخصص حصرياً في صيانة السيارات الألمانية والأوروبية. نجمع بين الخبرة الطويلة وأحدث التقنيات العالمية.
+                الورشة المتنقلة الأولى في الرياض المتخصصة في السيارات الألمانية والصينية. نجمع بين الخبرة وأحدث التقنيات المتنقلة لخدمتك في أي مكان.
               </p>
             </div>
             
@@ -227,8 +220,7 @@ export default function Home() {
               <h3 className="text-xl font-bold border-b-2 border-accent inline-block mb-4">روابط سريعة</h3>
               <ul className="space-y-3 text-white/70">
                 <li><a href="#" className="hover:text-accent">الرئيسية</a></li>
-                <li><a href="#services" className="hover:text-accent">الخدمات الميكانيكية</a></li>
-                <li><a href="#bodywork" className="hover:text-accent">قسم السمكرة</a></li>
+                <li><a href="#services" className="hover:text-accent">خدماتنا</a></li>
                 <li><a href="#contact" className="hover:text-accent">تواصل معنا</a></li>
               </ul>
             </div>
@@ -242,18 +234,18 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-accent" />
-                  <span>المملكة العربية السعودية، الرياض</span>
+                  <span>خدمة تغطي جميع أنحاء الرياض</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-accent" />
-                  <span>متاحون من السبت إلى الخميس</span>
+                  <span>متاحون 24/7 لخدمتكم</span>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="border-t border-white/10 pt-8 text-center text-white/40 text-sm">
-            <p>© {new Date().getFullYear()} صيانة السيارات الاوربية والالمانية. جميع الحقوق محفوظة.</p>
+            <p>© {new Date().getFullYear()} ورشة متنقلة للسيارات الألمانية والصينية. جميع الحقوق محفوظة.</p>
           </div>
         </div>
       </footer>

@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-bg",
-      "description": "Luxury European Car Workshop",
+      "description": "Mobile Mechanic Workshop",
       "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/5.png",
-      "imageHint": "luxury garage"
+      "imageHint": "mobile mechanic working"
     },
     {
       "id": "brand-bmw",
@@ -37,46 +37,22 @@
       "imageHint": "Volkswagen logo"
     },
     {
-      "id": "brand-landrover",
-      "description": "Land Rover",
-      "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/landrover.svg",
-      "imageHint": "Land Rover logo"
+      "id": "brand-geely",
+      "description": "Geely",
+      "imageUrl": "https://www.svgrepo.com/show/306527/geely-logo.svg",
+      "imageHint": "Geely logo"
     },
     {
-      "id": "brand-jaguar",
-      "description": "Jaguar",
-      "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/jaguar-cars-logo-svgrepo-com.svg",
-      "imageHint": "Jaguar logo"
+      "id": "brand-byd",
+      "description": "BYD",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/BYD_logo.svg",
+      "imageHint": "BYD logo"
     },
     {
-      "id": "brand-rollsroyce",
-      "description": "Rolls-Royce",
-      "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/rolls-royce-svgrepo-com.svg",
-      "imageHint": "Rolls Royce logo"
-    },
-    {
-      "id": "bodywork-1",
-      "description": "سمكرة الصدمات",
-      "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/10.png",
-      "imageHint": "car restoration"
-    },
-    {
-      "id": "bodywork-2",
-      "description": "الدهان الحراري",
-      "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/9.png",
-      "imageHint": "car painting"
-    },
-    {
-      "id": "bodywork-3",
-      "description": "تلميع ساطع",
-      "imageUrl": "https://images.unsplash.com/photo-1633014332834-c94559ff5439?auto=format&fit=crop&q=80&w=800",
-      "imageHint": "car detailing"
-    },
-    {
-      "id": "bodywork-4",
-      "description": "إصلاح دقيق",
-      "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/8.png",
-      "imageHint": "car repair"
+      "id": "brand-changan",
+      "description": "Changan",
+      "imageUrl": "https://www.changan-ksa.com/wp-content/uploads/2023/11/Changan-logo-E.svg",
+      "imageHint": "Changan logo"
     }
   ]
 }
