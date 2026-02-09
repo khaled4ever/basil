@@ -46,7 +46,7 @@ export function BrandSlider() {
                         alt={brand.description}
                         fill
                         unoptimized
-                        className="object-contain p-2"
+                        className="object-cover"
                         data-ai-hint={brand.imageHint}
                       />
                     </div>
