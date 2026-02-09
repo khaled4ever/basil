@@ -9,7 +9,7 @@
     {
       "id": "brand-bmw",
       "description": "BMW",
-      "imageUrl": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=400",
+      "imageUrl": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=400",
       "imageHint": "BMW logo"
     },
     {
@@ -33,13 +33,13 @@
     {
       "id": "brand-vw",
       "description": "Volkswagen",
-      "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2025/08/image-15.jpg",
+      "imageUrl": "https://drive.google.com/uc?export=download&id=1JJMopMVam9bQOF0w6SwQu-VuapcCxf5f",
       "imageHint": "Volkswagen logo"
     },
     {
       "id": "brand-landrover",
       "description": "Land Rover",
-      "imageUrl": "https://images.unsplash.com/photo-1594097840961-411cf23dd23f?auto=format&fit=crop&q=80&w=400",
+      "imageUrl": "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=400",
       "imageHint": "Land Rover logo"
     },
     {
@@ -56,14 +56,14 @@
     },
     {
       "id": "bodywork-1",
-      "description": "ترميم الصدمات",
-      "imageUrl": "https://images.unsplash.com/photo-1560024253-570f054dea63?auto=format&fit=crop&q=80&w=800",
+      "description": "سمكرة الصدمات",
+      "imageUrl": "https://images.unsplash.com/photo-1599256629751-4d726422f237?auto=format&fit=crop&q=80&w=800",
       "imageHint": "car restoration"
     },
     {
       "id": "bodywork-2",
       "description": "الدهان الحراري",
-      "imageUrl": "https://images.unsplash.com/photo-1594097840961-411cf23dd23f?auto=format&fit=crop&q=80&w=800",
+      "imageUrl": "https://images.unsplash.com/photo-1621905252507-b354bcadc3e1?auto=format&fit=crop&q=80&w=800",
       "imageHint": "car painting"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "bodywork-4",
       "description": "إصلاح دقيق",
-      "imageUrl": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=800",
+      "imageUrl": "https://images.unsplash.com/photo-1494906109277-51634ade302c?auto=format&fit=crop&q=80&w=800",
       "imageHint": "car repair"
     }
   ]
