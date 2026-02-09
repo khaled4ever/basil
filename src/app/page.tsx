@@ -53,8 +53,8 @@ const SERVICES = [
 ];
 
 export default function Home() {
-  const phoneNumber = "0505557816";
-  const whatsappUrl = "https://wa.me/966505557816";
+  const phoneNumber = "0565219735";
+  const whatsappUrl = "https://wa.me/966565219735";
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
 
   return (

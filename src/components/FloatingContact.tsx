@@ -2,8 +2,8 @@ import React from 'react';
 import { MessageCircle, Phone } from 'lucide-react';
 
 export function FloatingContact() {
-  const phoneNumber = "0505557816";
-  const whatsappUrl = `https://wa.me/966505557816`;
+  const phoneNumber = "0565219735";
+  const whatsappUrl = `https://wa.me/966565219735`;
   const callUrl = `tel:${phoneNumber}`;
 
   return (
