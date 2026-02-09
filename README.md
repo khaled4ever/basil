@@ -1,5 +1,43 @@
-# Firebase Studio
+# مركز صيانة السيارات الأوروبية والألمانية بالرياض
 
-This is a NextJS starter in Firebase Studio.
+هذا المشروع مبني باستخدام تقنيات حديثة: **Next.js 15**, **Tailwind CSS**, و **Genkit** للذكاء الاصطناعي.
 
-To get started, take a look at src/app/page.tsx.
+## خطوات رفع المشروع على GitHub
+
+لرفع هذا المشروع إلى مستودعك الخاص، افتح سطر الأوامر (Terminal) في مجلد المشروع ونفذ ما يلي:
+
+1. **تهيئة Git في المشروع:**
+   ```bash
+   git init
+   ```
+
+2. **إضافة جميع الملفات:**
+   ```bash
+   git add .
+   ```
+
+3. **تسجيل النسخة الأولى:**
+   ```bash
+   git commit -m "إطلاق النسخة الأولى للموقع"
+   ```
+
+4. **تعيين الفرع الرئيسي:**
+   ```bash
+   git branch -M main
+   ```
+
+5. **الربط بمستودع GitHub:**
+   - أنشئ مستودعاً جديداً على GitHub.
+   - انسخ الرابط (URL) الخاص بالمستودع.
+   - نفذ الأمر التالي (استبدل الرابط برابط مستودعك):
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   ```
+
+6. **رفع الكود:**
+   ```bash
+   git push -u origin main
+   ```
+
+## ملاحظات هامة
+- تأكد من إضافة `GOOGLE_GENAI_API_KEY` في إعدادات البيئة عند النشر (Vercel أو Firebase) لضمان عمل ميزات الذكاء الاصطناعي.
