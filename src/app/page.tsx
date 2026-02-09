@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Wrench, Settings, Zap, Cpu, Paintbrush, Activity, Gauge, MapPin, Clock, Phone } from 'lucide-react';
-import { BrandSlider } from '@/components/BrandSlider';
 import { FloatingContact } from '@/components/FloatingContact';
 import { ServiceSection } from '@/components/ServiceSection';
 import { BodyWorkSlider } from '@/components/BodyWorkSlider';
@@ -119,14 +118,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Brands Slider */}
-      <section id="brands">
-        <div className="container mx-auto px-4 mt-12 mb-4">
-          <h3 className="text-sm font-bold text-muted-foreground uppercase tracking-widest text-center">نتخصص في صيانة العلامات التجارية التالية</h3>
-        </div>
-        <BrandSlider />
       </section>
 
       {/* Main Services (AI Powered) */}
