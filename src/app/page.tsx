@@ -25,7 +25,13 @@ const SERVICES = [
     icon: <Zap className="w-5 h-5" />,
     imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/4.png'
   },
-  { id: 'programming', name: 'Car Computer Programming', arabicName: 'برمجة كمبيوتر السيارة', icon: <Cpu className="w-5 h-5" /> },
+  { 
+    id: 'programming', 
+    name: 'Car Computer Programming', 
+    arabicName: 'برمجة كمبيوتر السيارة', 
+    icon: <Cpu className="w-5 h-5" />,
+    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/2.png'
+  },
   { id: 'maintenance', name: 'Routine Maintenance', arabicName: 'الصيانة الدورية', icon: <Activity className="w-5 h-5" /> },
 ];
 
