@@ -16,7 +16,13 @@ const SERVICES = [
     icon: <Wrench className="w-5 h-5" />,
     imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/7.png'
   },
-  { id: 'engine', name: 'Engine Repair Overhaul', arabicName: 'توضيب المحركات', icon: <Gauge className="w-5 h-5" /> },
+  { 
+    id: 'engine', 
+    name: 'Engine Repair Overhaul', 
+    arabicName: 'توضيب المحركات', 
+    icon: <Gauge className="w-5 h-5" />,
+    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/6.png'
+  },
   { id: 'gearbox', name: 'Gearbox Overhaul', arabicName: 'توضيب الجيربوكس', icon: <Settings className="w-5 h-5" /> },
   { 
     id: 'electrical', 
