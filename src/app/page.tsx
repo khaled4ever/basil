@@ -32,7 +32,13 @@ const SERVICES = [
     icon: <Cpu className="w-5 h-5" />,
     imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/2.png'
   },
-  { id: 'maintenance', name: 'Routine Maintenance', arabicName: 'الصيانة الدورية', icon: <Activity className="w-5 h-5" /> },
+  { 
+    id: 'maintenance', 
+    name: 'Routine Maintenance', 
+    arabicName: 'الصيانة الدورية', 
+    icon: <Activity className="w-5 h-5" />,
+    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/1.png'
+  },
 ];
 
 export default function Home() {
@@ -138,9 +144,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Brand Showcase Section */}
-      <BrandSlider />
-
       {/* Main Services (AI Powered) */}
       <section id="services" className="bg-background">
         <div className="container mx-auto px-4 pt-20">
@@ -150,6 +153,9 @@ export default function Home() {
             <p className="text-muted-foreground">نقدم مجموعة متكاملة من الخدمات الميكانيكية والكهربائية المصممة خصيصاً للسيارات الأوروبية الحديثة.</p>
           </div>
         </div>
+
+        {/* Brand Showcase Section (Static Grid) */}
+        <BrandSlider />
 
         {SERVICES.map((service, index) => (
           <ServiceSection
@@ -164,7 +170,7 @@ export default function Home() {
         ))}
       </section>
 
-      {/* Bodywork Slider Section */}
+      {/* Bodywork Grid Section */}
       <section id="bodywork">
         <BodyWorkSlider />
       </section>
