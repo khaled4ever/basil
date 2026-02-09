@@ -14,22 +14,32 @@ interface ServiceSectionProps {
   arabicName: string;
   icon: React.ReactNode;
   isReversed?: boolean;
+  imageUrlOverride?: string;
 }
 
-export function ServiceSection({ id, name, arabicName, icon, isReversed }: ServiceSectionProps) {
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
+export function ServiceSection({ id, name, arabicName, icon, isReversed, imageUrlOverride }: ServiceSectionProps) {
+  const [imageUrl, setImageUrl] = useState<string | null>(imageUrlOverride || null);
   const [explanation, setExplanation] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadAIContent() {
       try {
-        const [imgRes, expRes] = await Promise.all([
-          generateServiceImages({ serviceType: name }),
+        const promises: Promise<any>[] = [
           generateServiceExplanations({ serviceName: arabicName })
-        ]);
-        setImageUrl(imgRes.imageUrl);
-        setExplanation(expRes.explanation);
+        ];
+        
+        // Only fetch image if no override is provided
+        if (!imageUrlOverride) {
+          promises.push(generateServiceImages({ serviceType: name }));
+        }
+
+        const results = await Promise.all(promises);
+        
+        setExplanation(results[0].explanation);
+        if (!imageUrlOverride && results[1]) {
+          setImageUrl(results[1].imageUrl);
+        }
       } catch (error) {
         console.error("Error loading AI content:", error);
       } finally {
@@ -37,7 +47,7 @@ export function ServiceSection({ id, name, arabicName, icon, isReversed }: Servi
       }
     }
     loadAIContent();
-  }, [name, arabicName]);
+  }, [name, arabicName, imageUrlOverride]);
 
   return (
     <section id={id} className="py-20 bg-background overflow-hidden">
@@ -77,15 +87,18 @@ export function ServiceSection({ id, name, arabicName, icon, isReversed }: Servi
           <div className="flex-1 relative w-full aspect-video lg:aspect-square group">
             <div className="absolute inset-0 bg-primary/5 rounded-2xl transform rotate-3 transition-transform group-hover:rotate-1" />
             <div className="relative h-full w-full overflow-hidden rounded-2xl shadow-xl">
-              {loading || !imageUrl ? (
+              {loading && !imageUrl ? (
                 <Skeleton className="w-full h-full" />
-              ) : (
+              ) : imageUrl ? (
                 <Image
                   src={imageUrl}
                   alt={arabicName}
                   fill
+                  unoptimized
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
+              ) : (
+                <Skeleton className="w-full h-full" />
               )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                 <span className="text-white font-bold text-xl">{arabicName} الاحترافية</span>

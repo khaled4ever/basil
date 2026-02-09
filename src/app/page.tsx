@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Wrench, Settings, Zap, Cpu, Paintbrush, Activity, Gauge, MapPin, Clock, Phone } from 'lucide-react';
 import { FloatingContact } from '@/components/FloatingContact';
@@ -10,7 +9,13 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const SERVICES = [
-  { id: 'mechanics', name: 'Mechanics', arabicName: 'الميكانيكا العامة', icon: <Wrench className="w-5 h-5" /> },
+  { 
+    id: 'mechanics', 
+    name: 'Mechanics', 
+    arabicName: 'الميكانيكا العامة', 
+    icon: <Wrench className="w-5 h-5" />,
+    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/6.png'
+  },
   { id: 'engine', name: 'Engine Repair Overhaul', arabicName: 'توضيب المحركات', icon: <Gauge className="w-5 h-5" /> },
   { id: 'gearbox', name: 'Gearbox Overhaul', arabicName: 'توضيب الجيربوكس', icon: <Settings className="w-5 h-5" /> },
   { id: 'electrical', name: 'Electrical Repairs', arabicName: 'الأعطال الكهربائية', icon: <Zap className="w-5 h-5" /> },
@@ -142,6 +147,7 @@ export default function Home() {
             arabicName={service.arabicName}
             icon={service.icon}
             isReversed={index % 2 !== 0}
+            imageUrlOverride={service.imageUrlOverride}
           />
         ))}
       </section>
