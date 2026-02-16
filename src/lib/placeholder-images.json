@@ -10,55 +10,64 @@
       "id": "brand-bmw",
       "description": "BMW",
       "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/bmw.svg",
-      "imageHint": "BMW logo"
+      "imageHint": "BMW logo",
+      "link": "https://www.bmw.com"
     },
     {
       "id": "brand-mercedes",
       "description": "Mercedes-Benz",
       "imageUrl": "https://pngimg.com/uploads/mercedes_logos/mercedes_logos_PNG1.png",
-      "imageHint": "Mercedes logo"
+      "imageHint": "Mercedes logo",
+      "link": "https://www.mercedes-benz.com"
     },
     {
       "id": "brand-audi",
       "description": "Audi",
       "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/audi.svg",
-      "imageHint": "Audi logo"
+      "imageHint": "Audi logo",
+      "link": "https://www.audi.com"
     },
     {
       "id": "brand-porsche",
       "description": "Porsche",
       "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/porsche.svg",
-      "imageHint": "Porsche logo"
+      "imageHint": "Porsche logo",
+      "link": "https://www.porsche.com"
     },
     {
       "id": "brand-vw",
       "description": "Volkswagen",
       "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/volkswagen.svg",
-      "imageHint": "Volkswagen logo"
+      "imageHint": "Volkswagen logo",
+      "link": "https://www.vw.com"
     },
     {
       "id": "brand-geely",
       "description": "Geely",
       "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/pngegg.png",
-      "imageHint": "Geely logo"
+      "imageHint": "Geely logo",
+      "link": "https://global.geely.com"
     },
     {
       "id": "brand-byd",
       "description": "BYD",
       "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/Byd-Logo-01.png",
-      "imageHint": "BYD logo"
+      "imageHint": "BYD logo",
+      "link": "https://www.byd.com"
     },
     {
       "id": "brand-changan",
       "description": "Changan",
       "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/Changan-Symbol-scaled.png",
-      "imageHint": "Changan logo"
+      "imageHint": "Changan logo",
+      "link": "https://www.changan-global.com"
     },
     {
       "id": "brand-haval",
       "description": "Haval",
       "imageUrl": "https://xn--ogbhrq.vip/wp-content/uploads/2026/02/haval-seeklogo.svg",
-      "imageHint": "Haval logo"
+      "imageHint": "Haval logo",
+      "link": "https://www.haval-global.com"
     },
     {
       "id": "bodywork-1",
