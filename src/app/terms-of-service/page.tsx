@@ -27,7 +27,7 @@ export default function TermsOfServicePage() {
 
           <div className="prose prose-lg max-w-none text-right rtl space-y-6 text-muted-foreground">
             <p>
-              آخر تحديث: {new Date().toLocaleDateString('ar-SA')}
+              آخر تحديث: <span suppressHydrationWarning>{new Date().toLocaleDateString('ar-SA')}</span>
             </p>
             <p>
               يرجى قراءة شروط الخدمة هذه ("الشروط") بعناية قبل استخدام موقعنا الإلكتروني أو طلب خدماتنا التي تقدمها "ورشة متنقلة للسيارات".
@@ -86,7 +86,7 @@ export default function TermsOfServicePage() {
       
       <footer className="bg-primary pt-10 pb-10 text-white">
         <div className="container mx-auto px-4 text-center text-white/40 text-sm">
-            <p>© {new Date().getFullYear()} ورشة متنقلة للسيارات الألمانية والصينية. جميع الحقوق محفوظة.</p>
+            <p>© <span suppressHydrationWarning>{new Date().getFullYear()}</span> ورشة متنقلة للسيارات الألمانية والصينية. جميع الحقوق محفوظة.</p>
         </div>
       </footer>
     </div>

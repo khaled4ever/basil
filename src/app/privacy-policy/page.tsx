@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
 
           <div className="prose prose-lg max-w-none text-right rtl space-y-6 text-muted-foreground">
             <p>
-              آخر تحديث: {new Date().toLocaleDateString('ar-SA')}
+              آخر تحديث: <span suppressHydrationWarning>{new Date().toLocaleDateString('ar-SA')}</span>
             </p>
             <p>
               نحن في "ورشة متنقلة للسيارات" ("نحن"، "الخاص بنا"، أو "الورشة") نلتزم بحماية خصوصية زوار موقعنا وعملائنا. توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية معلوماتك الشخصية عند استخدامك لموقعنا الإلكتروني أو خدماتنا.
@@ -94,7 +94,7 @@ export default function PrivacyPolicyPage() {
       
       <footer className="bg-primary pt-10 pb-10 text-white">
         <div className="container mx-auto px-4 text-center text-white/40 text-sm">
-            <p>© {new Date().getFullYear()} ورشة متنقلة للسيارات الألمانية والصينية. جميع الحقوق محفوظة.</p>
+            <p>© <span suppressHydrationWarning>{new Date().getFullYear()}</span> ورشة متنقلة للسيارات الألمانية والصينية. جميع الحقوق محفوظة.</p>
         </div>
       </footer>
     </div>
