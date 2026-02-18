@@ -7,14 +7,15 @@ export function FloatingContact() {
   const callUrl = `tel:${phoneNumber}`;
 
   return (
-    <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+    <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
       <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="group flex items-center gap-3 bg-green-500 text-white px-5 py-4 rounded-full shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:bg-green-600 transition-all transform hover:scale-110 active:scale-95"
+        aria-label="Contact us on WhatsApp"
+        className="group flex items-center justify-center bg-green-500 text-white w-14 h-14 sm:w-auto sm:px-5 sm:py-3 rounded-full shadow-lg hover:bg-green-600 transition-all transform hover:scale-110 active:scale-95"
       >
-        <span className="font-bold text-lg whitespace-nowrap animate-radiant-pulse">
+        <span className="hidden sm:inline font-bold sm:text-lg whitespace-nowrap mr-2">
           راسلنا واتساب
         </span>
         <MessageCircle className="w-7 h-7" />
@@ -22,9 +23,10 @@ export function FloatingContact() {
       
       <a
         href={callUrl}
-        className="group flex items-center gap-3 bg-primary text-white px-5 py-4 rounded-full shadow-[0_0_20px_rgba(30,58,138,0.4)] hover:bg-primary/90 transition-all transform hover:scale-110 active:scale-95"
+        aria-label="Call us"
+        className="group flex items-center justify-center bg-primary text-white w-14 h-14 sm:w-auto sm:px-5 sm:py-3 rounded-full shadow-lg hover:bg-primary/90 transition-all transform hover:scale-110 active:scale-95"
       >
-        <span className="font-bold text-lg whitespace-nowrap animate-radiant-pulse">
+        <span className="hidden sm:inline font-bold sm:text-lg whitespace-nowrap mr-2">
           اتصل بنا
         </span>
         <Phone className="w-7 h-7" />

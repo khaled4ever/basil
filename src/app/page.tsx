@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { BodyWorkSlider } from '@/components/BodyWorkSlider';
+import { MobileNav } from '@/components/MobileNav';
 
 const SERVICES = [
   { 
@@ -22,7 +23,7 @@ const SERVICES = [
     name: 'Mobile Battery Replacement', 
     arabicName: 'تغيير بطارية السيارة', 
     icon: <BatteryCharging className="w-5 h-5" />,
-    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/ChatGPT-Image-9-فبراير-2026،-04_57_45-م.png'
+    imageUrlOverride: 'https://xn--ogbhrq.vip/wp-content/uploads/2026/02/ChatGPT-Image-9-%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1-2026%D8%8C-%D9%81%D9%8A-04_57_45-%D9%85.png'
   },
   { 
     id: 'electrical', 
@@ -57,12 +58,12 @@ export default function Home() {
       {/* Header/Nav */}
       <header className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-primary text-accent rounded-lg flex items-center justify-center">
               <Truck className="w-6 h-6" />
             </div>
-            <h1 className="text-2xl font-bold text-primary tracking-tight">ورشة متنقلة للسيارات</h1>
-          </div>
+            <h1 className="text-xl sm:text-2xl font-bold text-primary tracking-tight">ورشة متنقلة للسيارات</h1>
+          </Link>
           
           <nav className="hidden md:flex items-center gap-5 text-sm font-semibold text-primary">
             <a href="#mechanics" className="hover:text-accent transition-colors">الميكانيكا</a>
@@ -73,11 +74,14 @@ export default function Home() {
             <a href="#bodywork" className="hover:text-accent transition-colors">السمكرة</a>
           </nav>
 
-          <Button className="bg-accent text-primary hover:bg-accent/90 font-bold px-6" asChild>
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              حجز موعد
-            </a>
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button className="hidden md:inline-flex bg-accent text-primary hover:bg-accent/90 font-bold px-6" asChild>
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                حجز موعد
+              </a>
+            </Button>
+            <MobileNav />
+          </div>
         </div>
       </header>
 
@@ -97,24 +101,24 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl space-y-6">
+          <div className="max-w-3xl space-y-4 md:space-y-6 text-center sm:text-right">
             <div className="inline-block bg-accent text-primary font-bold px-4 py-1 rounded-sm text-sm uppercase tracking-widest mb-2 animate-bounce">
               خبير السيارات الألمانية والصينية
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
               خدمة صيانة متنقلة تصلك <br />
               <span className="text-accent">أينما كنت</span>
             </h1>
-            <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
+            <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto sm:mx-0">
               نقدم خدمة صيانة متنقلة ومحترفة في الرياض لجميع أنواع السيارات الألمانية والصينية. فريقنا مجهز بأحدث المعدات لتقديم خدمات الميكانيكا، الكهرباء، فحص الكمبيوتر، والصيانة الدورية في موقعك.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-6">
-              <Button size="lg" className="bg-accent text-primary hover:bg-accent/90 text-lg font-bold px-10 py-7" asChild>
+            <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center sm:justify-start">
+              <Button size="lg" className="bg-accent text-primary hover:bg-accent/90 text-md sm:text-lg font-bold px-8 py-4 sm:px-10 sm:py-6" asChild>
                 <a href={`tel:${phoneNumber}`}>
                   اتصل بنا الآن
                 </a>
               </Button>
-              <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white text-lg font-bold px-10 py-7" asChild>
+              <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white text-md sm:text-lg font-bold px-8 py-4 sm:px-10 sm:py-6" asChild>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                   حجز موعد
                 </a>
@@ -125,7 +129,7 @@ export default function Home() {
 
         {/* Stats Overlay */}
         <div className="absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm py-6">
-          <div className="container mx-auto px-4 flex flex-wrap justify-between items-center gap-4 text-white">
+          <div className="container mx-auto px-4 flex flex-wrap justify-center sm:justify-between items-center gap-6 text-white">
             <div className="flex items-center gap-3">
               <MapPin className="text-accent w-6 h-6" />
               <div>
@@ -180,10 +184,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-accent overflow-hidden relative">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-right">
             <div className="flex-1 text-primary space-y-4">
-              <h2 className="text-4xl font-black italic uppercase leading-none">لا تترك سيارتك تتعطل</h2>
-              <p className="text-xl font-medium opacity-80">راحتك تهمنا، دع فريقنا المحترف يصل إليك ويخدم سيارتك في مكانها.</p>
+              <h2 className="text-3xl md:text-4xl font-black italic uppercase leading-none">لا تترك سيارتك تتعطل</h2>
+              <p className="text-lg md:text-xl font-medium opacity-80">راحتك تهمنا، دع فريقنا المحترف يصل إليك ويخدم سيارتك في مكانها.</p>
             </div>
             <div className="flex-1 flex justify-center md:justify-end">
               <Button size="lg" className="bg-primary text-white hover:bg-primary/90 text-xl font-black px-12 py-8 rounded-none shadow-[10px_10px_0px_0px_rgba(0, 48, 114, 1)]" asChild>
