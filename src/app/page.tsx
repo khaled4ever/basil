@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Truck, Wrench, BatteryCharging, Zap, Cpu, Activity, MapPin, Clock, Phone } from 'lucide-react';
 import { FloatingContact } from '@/components/FloatingContact';
 import { ServiceSection } from '@/components/ServiceSection';
@@ -245,8 +246,17 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="border-t border-white/10 pt-8 text-center text-white/40 text-sm">
+          <div className="border-t border-white/10 pt-8 text-center text-white/40 text-sm space-y-4 md:space-y-0 md:flex md:justify-between md:items-center">
             <p>© {new Date().getFullYear()} ورشة متنقلة للسيارات الألمانية والصينية. جميع الحقوق محفوظة.</p>
+            <div className="flex gap-4 justify-center">
+              <Link href="/terms-of-service" className="hover:text-accent transition-colors">
+                شروط الخدمة
+              </Link>
+              <span className='text-white/20'>|</span>
+              <Link href="/privacy-policy" className="hover:text-accent transition-colors">
+                سياسة الخصوصية
+              </Link>
+            </div>
           </div>
         </div>
       </footer>
