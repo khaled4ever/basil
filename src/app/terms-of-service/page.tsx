@@ -1,9 +1,22 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { Truck } from 'lucide-react';
 
 export default function TermsOfServicePage() {
   const phoneNumber = "0565219735";
+  const callUrl = `tel:${phoneNumber}`;
+
+  const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (typeof (window as any).gtag_report_conversion === 'function') {
+      (window as any).gtag_report_conversion(callUrl);
+    } else {
+      window.location.href = callUrl;
+    }
+  };
+
   return (
     <div className="bg-background text-foreground">
       <header className="sticky top-0 z-40 w-full bg-white border-b">
@@ -78,7 +91,7 @@ export default function TermsOfServicePage() {
             <p>
               إذا كان لديك أي أسئلة حول شروط الخدمة، يمكنك التواصل معنا عبر:
               <br />
-              الهاتف: <a href={`tel:${phoneNumber}`} className="text-accent">{phoneNumber}</a>
+              الهاتف: <a href={callUrl} onClick={handleCallClick} className="text-accent">{phoneNumber}</a>
             </p>
           </div>
         </div>

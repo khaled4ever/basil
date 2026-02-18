@@ -48,6 +48,29 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Event snippet for انقر للاتصال conversion page */}
+        <Script
+          id="gtag-conversion-snippet"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              function gtag_report_conversion(url) {
+                var callback = function () {
+                  if (typeof(url) != 'undefined') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-17958938725/Uu4vCMePuvobEOXQvvNC',
+                    'value': 1.0,
+                    'currency': 'SAR',
+                    'event_callback': callback
+                });
+                return false;
+              }
+            `,
+          }}
+        />
       </head>
       <body className="font-body antialiased rtl">
         {children}

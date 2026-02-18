@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { MessageCircle, Phone } from 'lucide-react';
 
@@ -5,6 +7,15 @@ export function FloatingContact() {
   const phoneNumber = "0565219735";
   const whatsappUrl = `https://wa.me/966565219735`;
   const callUrl = `tel:${phoneNumber}`;
+
+  const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (typeof (window as any).gtag_report_conversion === 'function') {
+      (window as any).gtag_report_conversion(callUrl);
+    } else {
+      window.location.href = callUrl;
+    }
+  };
 
   return (
     <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
@@ -23,6 +34,7 @@ export function FloatingContact() {
       
       <a
         href={callUrl}
+        onClick={handleCallClick}
         aria-label="Call us"
         className="group flex items-center justify-center bg-primary text-white w-14 h-14 sm:w-auto sm:px-5 sm:py-3 rounded-full shadow-lg hover:bg-primary/90 transition-all transform hover:scale-110 active:scale-95"
       >

@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { Truck, Wrench, BatteryCharging, Zap, Cpu, Activity, MapPin, Clock, Phone } from 'lucide-react';
@@ -52,6 +54,16 @@ export default function Home() {
   const phoneNumber = "0565219735";
   const whatsappUrl = "https://wa.me/966565219735";
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
+  const callUrl = `tel:${phoneNumber}`;
+
+  const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (typeof (window as any).gtag_report_conversion === 'function') {
+      (window as any).gtag_report_conversion(callUrl);
+    } else {
+      window.location.href = callUrl;
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -114,7 +126,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center sm:justify-start">
               <Button size="lg" className="bg-accent text-primary hover:bg-accent/90 text-md sm:text-lg font-bold px-8 py-4 sm:px-10 sm:py-6" asChild>
-                <a href={`tel:${phoneNumber}`}>
+                <a href={callUrl} onClick={handleCallClick}>
                   اتصل بنا الآن
                 </a>
               </Button>
@@ -148,7 +160,7 @@ export default function Home() {
               <Phone className="text-accent w-6 h-6" />
               <div>
                 <p className="text-xs text-gray-400">للحجز والاستفسار</p>
-                <p className="font-bold">{phoneNumber}</p>
+                <a href={callUrl} onClick={handleCallClick} className="font-bold hover:underline">{phoneNumber}</a>
               </div>
             </div>
           </div>
@@ -236,7 +248,7 @@ export default function Home() {
               <div className="space-y-4 text-white/70">
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-accent" />
-                  <span>{phoneNumber}</span>
+                   <a href={callUrl} onClick={handleCallClick} className="hover:underline">{phoneNumber}</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-accent" />
