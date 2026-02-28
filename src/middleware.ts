@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest, NextFetchEvent } from 'next/server';
 
 const AD_CLICK_COOKIE = 'ad-click-tracked-session';
+const AD_CLICK_COOKIE_MAX_AGE_SECONDS = 30 * 60; // 30 minutes
 
 // The middleware now accepts 'event' as a second argument.
 export function middleware(request: NextRequest, event: NextFetchEvent) {
@@ -64,6 +65,7 @@ export function middleware(request: NextRequest, event: NextFetchEvent) {
     path: '/',
     httpOnly: true,
     sameSite: 'lax',
+    maxAge: AD_CLICK_COOKIE_MAX_AGE_SECONDS,
   });
 
   return response;
